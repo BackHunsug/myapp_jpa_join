@@ -18,8 +18,9 @@ jobs:
           distribution: 'temurin'
 
       - name: Build with Gradle
-        run: ./gradlew clean build -x test # 테스트 에러 방지를 위해 -x test 사용
-
+        run: |
+          chmod +x gradlew
+          ./gradlew clean build -x test
       # 2. DockerHub 이미지 빌드 및 푸시
       - name: Login to DockerHub
         uses: docker/login-action@v2
