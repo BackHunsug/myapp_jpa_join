@@ -38,7 +38,7 @@ public class Board {
     private LocalDateTime createdDate;
 
     @Column(updatable = false)
-    private LocalDateTime modifiedDate = LocalDateTime.now();
+    private LocalDateTime modifiedDate;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "member_id", insertable = false, updatable = false)

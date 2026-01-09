@@ -19,8 +19,8 @@ public class BoardDto {
     private String contents; // 내용
     private Long memberId; // 작성자 아이디
     private String writer; //작성자명
-    private Integer hits=0; // 조회 수
-    private String deleteYn="N"; // 삭제 여부
+    private Integer hits; // 조회 수
+    private String deleteYn; // 삭제 여부
     private String createdDate;// 생성일
     private String modifiedDate;
     private String name; //
