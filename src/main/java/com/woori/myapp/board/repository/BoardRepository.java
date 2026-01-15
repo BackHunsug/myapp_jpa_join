@@ -21,7 +21,6 @@ public interface BoardRepository extends JpaRepository<Board, Long>{
 	Page<Board> findAllWithMember(Pageable pageable);
 
 
-
 	List<Board> findByTitleOrderByIdDesc(String title, Pageable pageable);
 	List<Board> findByOrderByIdDesc(Pageable pageable);
 	List<Board> findByTitleLike(String title, Pageable pageable);

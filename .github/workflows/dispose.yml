@@ -2,7 +2,10 @@ name: Deploy to AWS
 
 on:
   push:
-    branches: [ master, main ] # main 또는 master 브랜치에 푸시될 때 실행
+    branches: [ master, main ]
+    # main 또는 master 브랜치에 푸시될 때 실행
+    #기본 git branch가  로컬서 만들면 master
+    # git hub에서 만들면 main
 
 jobs:
   build-and-deploy:
